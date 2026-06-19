@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDN Butoh 1 Ngasem - Website Resmi</title>
+    <title>SDN Butoh 1 Ngasem - Website Resmi Sekolah</title>
     <!-- Menggunakan Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
-    <!-- FONT PREMIUM: Plus Jakarta Sans dari Google Fonts -->
+    <!-- FONT PREMIUM KEDINASAN: Plus Jakarta Sans / Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -19,185 +19,186 @@
         }
     </style>
 </head>
-<body class="bg-indigo-50/30 text-slate-700 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- NAVIGATION BAR -->
-    <nav class="bg-indigo-950 text-white shadow-xl sticky top-0 z-50 border-b border-cyan-500/30 backdrop-blur-md bg-opacity-95">
+    <!-- TOP BAR (Ciri Khas Web Instansi Pemerintah) -->
+    <div class="bg-indigo-950 text-white text-[11px] py-2 px-6 border-b border-white/10 hidden md:block font-medium tracking-wide">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div>
+                <span class="opacity-75">Situs Resmi Pendidikan Dasar — Kabupaten Bojonegoro</span>
+            </div>
+            <div class="flex space-x-4 opacity-90">
+                <span><i class="far fa-calendar-alt mr-1"></i> Juni 2026</span>
+                <a href="https://sdnbutoh1ngasem.my.id" target="_blank" class="text-cyan-400 font-bold hover:underline"><i class="fas fa-external-link-alt mr-1"></i> Ruang Belajar Mandiri (.my.id)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR (Putih Bersih ala Kemendikbud) -->
+    <nav class="bg-white text-slate-900 shadow-sm sticky top-0 z-50 border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <!-- SUSUNAN NAMA SEKOLAH -->
+            <!-- Identitas Logo Kiri -->
             <div class="flex items-center space-x-4">
-                <div class="bg-gradient-to-br from-cyan-400 to-cyan-500 p-2.5 rounded-2xl text-indigo-950 font-bold text-xl w-11 h-11 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+                <!-- Box Logo Biru Tua (Bisa diganti lambang Tut Wuri / Logo Sekolah) -->
+                <div class="bg-indigo-900 p-2.5 rounded-xl text-white font-bold text-2xl w-12 h-12 flex items-center justify-center shadow-sm">
                     🎓
                 </div>
                 <div>
-                    <span class="font-extrabold text-xl block tracking-wide text-white uppercase">SDN BUTOH 1 NGASEM</span>
-                    <span class="text-xs text-cyan-400 block tracking-widest font-semibold mt-0.5">Kabupaten Bojonegoro</span>
+                    <h1 class="font-extrabold text-lg block tracking-tight text-indigo-950 uppercase leading-none">SDN BUTOH 1 NGASEM</h1>
+                    <span class="text-xs text-slate-500 block tracking-wider font-medium mt-1">Kabupaten Bojonegoro</span>
                 </div>
             </div>
             
-            <!-- Menu Kanan Atas -->
-            <div class="hidden md:flex space-x-8 font-medium items-center text-sm tracking-wide">
-                <a href="#" class="text-cyan-400 border-b-2 border-cyan-400 pb-1 transition font-bold">Beranda</a>
-                <a href="#profil" class="text-slate-300 hover:text-cyan-400 transition">Profil</a>
-                <a href="#informasi" class="text-slate-300 hover:text-cyan-400 transition">Informasi</a>
-                <a href="https://sdnbutoh1ngasem.my.id" target="_blank" class="bg-gradient-to-r from-cyan-400 to-cyan-500 text-indigo-950 px-5 py-2.5 rounded-xl font-extrabold hover:brightness-110 hover:scale-[1.02] transition transform duration-200 shadow-md flex items-center gap-2 text-xs uppercase tracking-wider">
-                    <i class="fas fa-book-reader"></i> Ruang Belajar
+            <!-- Menu Navigasi Horizontal -->
+            <div class="flex space-x-8 font-semibold items-center text-sm text-slate-700 tracking-wide">
+                <a href="#" class="text-indigo-900 border-b-2 border-indigo-900 pb-1 transition">Beranda</a>
+                <a href="#profil" class="hover:text-indigo-950 transition">Profil</a>
+                <a href="#informasi" class="hover:text-indigo-950 transition">Informasi</a>
+                <a href="#metrik" class="hover:text-indigo-950 transition">Data Sekolah</a>
+                
+                <!-- Akses Utama Cepat -->
+                <a href="https://sdnbutoh1ngasem.my.id" target="_blank" class="hidden lg:flex bg-indigo-900 text-white px-5 py-2 rounded-lg font-bold hover:bg-indigo-950 transition shadow-sm items-center gap-2 text-xs uppercase tracking-wider">
+                    <i class="fas fa-graduation-cap"></i> Portal Belajar
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- PREMIUM SPLIT HERO SECTION -->
-    <main class="max-w-7xl mx-auto px-6 py-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            
-            <!-- KIRI (65% Layar): Banner Elegan Menggunakan GAMBAR LATAR BELAKANG -->
-            <!-- Catatan: Ganti url('...') di bawah dengan link foto gedung/kegiatan sekolah Anda -->
-            <div class="lg:col-span-7 relative overflow-hidden rounded-[2.5rem] shadow-2xl bg-indigo-950 text-white flex flex-col justify-between p-10 min-h-[450px] bg-cover bg-center" 
-                 style="background-image: linear-gradient(to bottom right, rgba(30, 27, 75, 0.95), rgba(30, 27, 75, 0.4), rgba(8, 145, 178, 0.6)), url('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1000');">
+    <!-- CAROUSEL/SLIDER HERO UTAMA (100% Mengikuti Layout Banner Kemendikdasmen) -->
+    <header class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <!-- Frame Besar Gambar Berita Utama -->
+            <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-[21/9] bg-indigo-950">
+                <!-- Gambar Latar Belakang Utama -->
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1500" alt="Banner Utama" class="w-full h-full object-cover opacity-60">
                 
-                <div>
-                    <span class="bg-white/20 text-cyan-200 border border-white/20 text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest inline-block mb-6 backdrop-blur-md">
-                        Digital Edu-Portal
-                    </span>
-                    <h1 class="text-3xl md:text-5xl font-light leading-tight tracking-tight text-slate-100">
-                        Mewujudkan Generasi <br>
-                        <span class="font-extrabold text-white bg-gradient-to-r from-white via-slate-100 to-cyan-300 bg-clip-text text-transparent">Cerdas & Berkarakter</span>
-                    </h1>
-                </div>
+                <!-- Lapisan Gradasi Gelap di Bawah Teks -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-                <div class="mt-8 border-t border-white/20 pt-6 max-w-xl backdrop-blur-sm bg-black/10 p-4 rounded-2xl">
-                    <p class="text-sm text-slate-200 font-medium leading-relaxed">
-                        Selamat Datang di Website Resmi SDN Butoh 1 Ngasem. Pusat transparansi informasi akademik, kreativitas siswa, dan gerbang ekosistem digital sekolah.
-                    </p>
+                <!-- Konten Informasi Banner Mengambang di Kiri Bawah -->
+                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
+                    <div class="max-w-3xl">
+                        <span class="bg-indigo-600 text-white text-[10px] px-3 py-1 rounded font-bold uppercase tracking-wider inline-block mb-3">
+                            Fokus Utama
+                        </span>
+                        <h2 class="text-xl md:text-4xl font-extrabold leading-tight tracking-tight drop-shadow-md">
+                            Implementasi Kurikulum Merdeka Melalui Ekosistem Digitalisasi Pendidikan Mandiri
+                        </h2>
+                        <p class="mt-2 text-xs md:text-sm text-slate-200 font-normal max-w-xl opacity-90 hidden md:block">
+                            SDN Butoh 1 Ngasem berkomitmen penuh melahirkan generasi berkarakter mulia dengan dukungan fasilitas pembelajaran berbasis digital modern.
+                        </p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </header>
 
-            <!-- KANAN (35% Layar): Komponen Grafik Batang Premium -->
-            <div class="lg:col-span-5 flex flex-col justify-between bg-white p-8 rounded-[2.5rem] shadow-xl border border-slate-100/80">
-                <div class="flex items-center justify-between pb-4 border-b border-slate-100">
-                    <div>
-                        <h2 class="font-extrabold text-base text-indigo-950 tracking-wide uppercase">Metrik Sekolah</h2>
-                        <p class="text-xs text-slate-400 font-medium">Data aktual infrastruktur & SDM</p>
-                    </div>
-                    <div class="bg-indigo-50 text-indigo-600 p-3 rounded-2xl"><i class="fas fa-chart-bar text-base"></i></div>
-                </div>
-
-                <div class="space-y-5 my-6 flex-grow flex flex-col justify-center">
-                    <div>
-                        <div class="flex justify-between text-xs font-bold text-slate-500 mb-1.5 tracking-wide uppercase">
-                            <span>Siswa Aktif</span>
-                            <span class="text-indigo-950 font-extrabold">180 Anak</span>
-                        </div>
-                        <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                            <div class="bg-gradient-to-r from-cyan-400 to-cyan-500 h-full rounded-full w-[85%] shadow-md"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-xs font-bold text-slate-500 mb-1.5 tracking-wide uppercase">
-                            <span>Guru & Staf</span>
-                            <span class="text-indigo-950 font-extrabold">14 Anggota</span>
-                        </div>
-                        <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                            <div class="bg-indigo-950 h-full rounded-full w-[65%]"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-xs font-bold text-slate-500 mb-1.5 tracking-wide uppercase">
-                            <span>Rombongan Belajar</span>
-                            <span class="text-indigo-950 font-extrabold">6 Kelas</span>
-                        </div>
-                        <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                            <div class="bg-gradient-to-r from-cyan-500 to-indigo-900 h-full rounded-full w-[75%]"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                    <span class="font-bold text-slate-400 tracking-wider">STATUS KELAYAKAN:</span>
-                    <span class="bg-gradient-to-r from-indigo-950 to-indigo-900 text-cyan-400 px-3 py-1.5 rounded-xl font-extrabold tracking-widest shadow-sm">
-                        AKREDITASI A
-                    </span>
-                </div>
+    <!-- SECTION INFO DATA METRIK (Pilar Statistik Akreditasi) -->
+    <section id="metrik" class="max-w-7xl mx-auto px-6 py-6">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+            <div class="border-r border-slate-100 last:border-0 py-2">
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block">Status Kelayakan</span>
+                <span class="text-xl font-extrabold text-indigo-950 mt-1 block">AKREDITASI A</span>
             </div>
+            <div class="border-r border-slate-100 last:border-0 py-2">
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block">Siswa Aktif</span>
+                <span class="text-xl font-extrabold text-indigo-950 mt-1 block">180 Anak</span>
+            </div>
+            <div class="border-r border-slate-100 last:border-0 py-2">
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block">Guru & Tenaga Staf</span>
+                <span class="text-xl font-extrabold text-indigo-950 mt-1 block">14 Personel</span>
+            </div>
+            <div class="border-r border-slate-100 last:border-0 py-2">
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block">Kelompok Belajar</span>
+                <span class="text-xl font-extrabold text-indigo-950 mt-1 block">6 Rombel</span>
+            </div>
+        </div>
+    </section>
 
+    <!-- KONTEN BERITA AKTUAL (3 Kolom Grid Standard Kemendikbud) -->
+    <main id="informasi" class="max-w-7xl mx-auto px-6 py-8">
+        <!-- Judul Kluster Berita -->
+        <div class="flex items-center justify-between mb-6 border-b border-slate-200 pb-3">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-6 bg-indigo-900 rounded-full"></div>
+                <h2 class="text-xl font-extrabold text-indigo-950 tracking-tight">Kabar Terkini Sekolah</h2>
+            </div>
+            <a href="#" class="text-xs font-bold text-indigo-700 hover:text-indigo-900 transition tracking-wide">Lihat Semua Berita &rarr;</a>
         </div>
 
-        <!-- BAGIAN BAWAH: BERITA & INFO PENTING DENGAN GAMBAR ASLI -->
-        <section id="informasi" class="mt-16">
-            <div class="flex items-center justify-between mb-6 border-b border-slate-200 pb-3">
-                <div class="flex items-center space-x-3">
-                    <div class="w-2 h-6 bg-cyan-400 rounded-full"></div>
-                    <h2 class="text-xl font-extrabold text-indigo-950 tracking-tight">Berita & Informasi Penting</h2>
+        <!-- Grid Tiga Kolom -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Artikel 1 -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-200 group">
+                <div class="h-48 overflow-hidden bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=600" alt="PPDB" class="w-full h-full object-cover group-hover:scale-102 transition duration-300">
                 </div>
-                <a href="#" class="text-xs font-bold text-indigo-600 hover:text-cyan-500 transition tracking-wide">Lihat Semua Berita &rarr;</a>
-            </div>
+                <div class="p-5">
+                    <span class="text-[10px] bg-slate-100 text-indigo-900 px-2 py-0.5 rounded font-bold uppercase tracking-wide">Pengumuman</span>
+                    <h3 class="font-bold text-base text-slate-900 mt-2.5 line-clamp-2 hover:text-indigo-900 transition cursor-pointer leading-snug">
+                        Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran Baru Resmi Dibuka
+                    </h3>
+                    <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar"></i> 19 Juni 2026</p>
+                </div>
+            </article>
 
-            <!-- Grid Konten Berita 3 Kolom -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Kartu Berita 1 -->
-                <div class="bg-white rounded-[2rem] shadow-md border border-slate-100/80 overflow-hidden hover:shadow-xl hover:border-cyan-200 transition duration-300 group">
-                    <!-- TAG Gambar Diganti dengan <img> asli -->
-                    <div class="h-48 overflow-hidden bg-slate-100">
-                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=600" alt="PPDB" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="p-6">
-                        <span class="text-[10px] bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-md font-bold uppercase tracking-wider">Pengumuman</span>
-                        <h3 class="font-bold text-base text-indigo-950 mt-3 line-clamp-2 group-hover:text-cyan-600 transition cursor-pointer leading-snug">
-                            Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran Baru Telah Dibuka
-                        </h3>
-                        <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar text-slate-300"></i> Juni 2026</p>
-                    </div>
+            <!-- Artikel 2 -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-200 group">
+                <div class="h-48 overflow-hidden bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600" alt="Prestasi" class="w-full h-full object-cover group-hover:scale-102 transition duration-300">
                 </div>
+                <div class="p-5">
+                    <span class="text-[10px] bg-slate-100 text-indigo-900 px-2 py-0.5 rounded font-bold uppercase tracking-wide">Prestasi</span>
+                    <h3 class="font-bold text-base text-slate-900 mt-2.5 line-clamp-2 hover:text-indigo-900 transition cursor-pointer leading-snug">
+                        Siswa SDN Butoh 1 Raih Medali Emas Lomba Matematika Tingkat Kecamatan
+                    </h3>
+                    <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar"></i> 15 Juni 2026</p>
+                </div>
+            </article>
 
-                <!-- Kartu Berita 2 -->
-                <div class="bg-white rounded-[2rem] shadow-md border border-slate-100/80 overflow-hidden hover:shadow-xl hover:border-cyan-200 transition duration-300 group">
-                    <!-- TAG Gambar Diganti dengan <img> asli -->
-                    <div class="h-48 overflow-hidden bg-slate-100">
-                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600" alt="Prestasi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="p-6">
-                        <span class="text-[10px] bg-emerald-50 text-emerald-600 px-2.5 py-1 rounded-md font-bold uppercase tracking-wider">Prestasi</span>
-                        <h3 class="font-bold text-base text-indigo-950 mt-3 line-clamp-2 group-hover:text-cyan-600 transition cursor-pointer leading-snug">
-                            Siswa SDN Butoh 1 Meraih Juara 1 Lomba Matematika Tingkat Kecamatan
-                        </h3>
-                        <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar text-slate-300"></i> Mei 2026</p>
-                    </div>
+            <!-- Artikel 3 -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-200 group">
+                <div class="h-48 overflow-hidden bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600" alt="Digitalisasi" class="w-full h-full object-cover group-hover:scale-102 transition duration-300">
                 </div>
-
-                <!-- Kartu Berita 3 -->
-                <div class="bg-white rounded-[2rem] shadow-md border border-slate-100/80 overflow-hidden hover:shadow-xl hover:border-cyan-200 transition duration-300 group">
-                    <!-- TAG Gambar Diganti dengan <img> asli -->
-                    <div class="h-48 overflow-hidden bg-slate-100">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600" alt="Digitalisasi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="p-6">
-                        <span class="text-[10px] bg-amber-50 text-amber-700 px-2.5 py-1 rounded-md font-bold uppercase tracking-wider">Kegiatan</span>
-                        <h3 class="font-bold text-base text-indigo-950 mt-3 line-clamp-2 group-hover:text-cyan-600 transition cursor-pointer leading-snug">
-                            Pelaksanaan Digitalisasi Kelas Melalui Pemanfaatan Aplikasi Belajar Mandiri
-                        </h3>
-                        <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar text-slate-300"></i> April 2026</p>
-                    </div>
+                <div class="p-5">
+                    <span class="text-[10px] bg-slate-100 text-indigo-900 px-2 py-0.5 rounded font-bold uppercase tracking-wide">Kegiatan</span>
+                    <h3 class="font-bold text-base text-slate-900 mt-2.5 line-clamp-2 hover:text-indigo-900 transition cursor-pointer leading-snug">
+                        Pemanfaatan Ekosistem Kelas Digital untuk Efisiensi Ujian Mandiri Siswa
+                    </h3>
+                    <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar"></i> 10 Juni 2026</p>
                 </div>
-            </div>
-        </section>
+            </article>
+        </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-indigo-950 text-slate-400 text-sm py-12 mt-20 border-t-4 border-cyan-400">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- FOOTER RESMI (Mirip Tampilan Kaki Web Lembaga Negara) -->
+    <footer class="bg-indigo-950 text-slate-400 text-xs py-12 mt-16 border-t-4 border-yellow-500">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Kolom 1: Profil -->
             <div>
-                <h4 class="text-white font-black text-lg mb-3 tracking-wide">SDN Butoh 1 Ngasem</h4>
-                <p class="text-indigo-200/70 text-xs leading-relaxed">
-                    Kecamatan Ngasem, Kabupaten Bojonegoro, Jawa Timur.
+                <h4 class="text-white font-extrabold text-sm mb-3 uppercase tracking-wider">SDN Butoh 1 Ngasem</h4>
+                <p class="leading-relaxed opacity-75">
+                    Melayani dengan sepenuh hati demi masa depan bangsa.
                 </p>
             </div>
+            <!-- Kolom 2: Kontak/Alamat -->
+            <div>
+                <h4 class="text-white font-extrabold text-sm mb-3 uppercase tracking-wider">Kontak & Lokasi</h4>
+                <p class="leading-relaxed opacity-75">
+                    Desa Butoh, Kecamatan Ngasem,<br>
+                    Kabupaten Bojonegoro, Jawa Timur, Indonesia.<br>
+                    <span class="block mt-2"><i class="far fa-envelope mr-1"></i> info@sdnbutoh1ngasem.sch.id</span>
+                </p>
+            </div>
+            <!-- Kolom 3: Tautan Pranala -->
             <div class="md:text-right">
-                <h4 class="text-white font-bold text-base mb-3">Tautan Internal</h4>
-                <a href="https://sdnbutoh1ngasem.my.id" target="_blank" class="text-cyan-300 hover:text-cyan-200 font-black text-sm inline-flex items-center gap-2 bg-indigo-900/60 px-4 py-2 rounded-lg border border-cyan-400/30">
-                    <i class="fas fa-external-link-alt text-xs"></i> Portal Belajar (.my.id)
-                </a>
-                <p class="text-[11px] text-indigo-300/40 mt-8">&copy; 2026 SDN Butoh 1 Ngasem. All rights reserved.</p>
+                <h4 class="text-white font-extrabold text-sm mb-3 uppercase tracking-wider">Pranala Luar</h4>
+                <ul class="space-y-2 text-cyan-400 font-medium">
+                    <li><a href="https://sdnbutoh1ngasem.my.id" target="_blank" class="hover:underline">Portal Ruang Belajar Mandiri &rarr;</a></li>
+                    <li><a href="https://kemdikbud.go.id" target="_blank" class="hover:underline text-slate-300">Kementerian Dikdasmen &rarr;</a></li>
+                </ul>
+                <p class="text-[11px] text-slate-500 mt-8">&copy; 2026 SDN Butoh 1 Ngasem. Seluruh Hak Cipta Dilindungi.</p>
             </div>
         </div>
     </footer>
