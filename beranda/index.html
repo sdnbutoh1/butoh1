@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDN Butoh 1 Ngasem - Website Resmi Sekolah</title>
+    <!-- Menggunakan Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
+    <!-- FONT PREMIUM KEDINASAN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,6 +26,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
+    <!-- TOP BAR -->
     <div class="bg-indigo-950 text-white text-[11px] py-2 px-6 border-b border-white/10 hidden md:block font-medium tracking-wide">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div><span class="opacity-75">Situs Resmi Pendidikan Dasar — Kabupaten Bojonegoro</span></div>
@@ -34,16 +37,17 @@
         </div>
     </div>
 
+    <!-- MAIN NAVIGATION BAR -->
     <nav class="bg-white text-slate-900 shadow-sm sticky top-0 z-50 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="flex items-center space-x-4">
-                <div class="bg-indigo-900 p-2.5 rounded-xl text-white font-bold text-2xl w-12 h-12 flex items-center justify-center shadow-sm">🎓</div>
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-3 md:space-x-4 w-full md:w-auto">
+                <div class="bg-indigo-900 p-2 rounded-xl text-white font-bold text-xl md:text-2xl w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-sm shrink-0">🎓</div>
                 <div>
-                    <h1 class="font-extrabold text-lg block tracking-tight text-indigo-950 uppercase leading-none">SDN BUTOH 1 NGASEM</h1>
-                    <span class="text-xs text-slate-500 block tracking-wider font-medium mt-1">Kabupaten Bojonegoro</span>
+                    <h1 class="font-extrabold text-base md:text-lg block tracking-tight text-indigo-950 uppercase leading-none">SDN BUTOH 1 NGASEM</h1>
+                    <span class="text-[10px] md:text-xs text-slate-500 block tracking-wider font-medium mt-1">Kabupaten Bojonegoro</span>
                 </div>
             </div>
-            <div class="flex space-x-8 font-semibold items-center text-sm text-slate-700 tracking-wide">
+            <div class="flex space-x-6 md:space-x-8 font-semibold items-center text-xs md:text-sm text-slate-700 tracking-wide w-full md:w-auto justify-center md:justify-end border-t md:border-t-0 pt-3 md:pt-0">
                 <a href="#" class="text-indigo-900 border-b-2 border-indigo-900 pb-1 transition">Beranda</a>
                 <a href="#profil" class="hover:text-indigo-950 transition">Profil</a>
                 <a href="#informasi" class="hover:text-indigo-950 transition">Informasi</a>
@@ -54,34 +58,40 @@
         </div>
     </nav>
 
+    <!-- CAROUSEL/SLIDER HERO UTAMA AUTOMATIS (RESPONSIF HP) -->
     <header class="bg-white">
-        <div class="max-w-7xl mx-auto px-6 py-6">
-            <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-[21/9] bg-indigo-950">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-6">
+            <!-- Di HP rasionya disesuaikan jadi aspect-video agar gambar tetap tinggi dan teks muat -->
+            <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-video md:aspect-[21/9] bg-indigo-950">
                 
+                <!-- SLIDE 1 -->
                 <div class="slide active h-full w-full relative">
-                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1500" alt="Slide 1" class="w-full h-full object-cover opacity-60">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
-                        <span class="bg-indigo-600 text-white text-[10px] px-3 py-1 rounded font-bold uppercase tracking-wider inline-block mb-3">Fokus Utama</span>
-                        <h2 class="text-xl md:text-4xl font-extrabold leading-tight tracking-tight drop-shadow-md">Implementasi Kurikulum Merdeka Melalui Ekosistem Digitalisasi Pendidikan Mandiri</h2>
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1500" alt="Slide 1" class="w-full h-full object-cover opacity-50 md:opacity-60">
+                    <!-- Efek Gelap yang lebih kuat di HP (bg-black/40) agar tulisan putih terbaca jelas -->
+                    <div class="absolute inset-0 bg-black/40 md:bg-transparent md:bg-gradient-to-t md:from-black/90 md:via-black/30 md:to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 md:p-10 text-white z-10">
+                        <span class="bg-indigo-600 text-white text-[9px] md:text-[10px] px-2.5 py-0.5 md:py-1 rounded font-bold uppercase tracking-wider inline-block mb-1.5 md:mb-3">Fokus Utama</span>
+                        <h2 class="text-sm md:text-4xl font-extrabold leading-tight tracking-tight drop-shadow-lg">Implementasi Kurikulum Merdeka Melalui Ekosistem Digitalisasi Pendidikan Mandiri</h2>
                     </div>
                 </div>
 
+                <!-- SLIDE 2 -->
                 <div class="slide h-full w-full relative">
-                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=1500" alt="Slide 2" class="w-full h-full object-cover opacity-60">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
-                        <span class="bg-emerald-600 text-white text-[10px] px-3 py-1 rounded font-bold uppercase tracking-wider inline-block mb-3">Pendaftaran</span>
-                        <h2 class="text-xl md:text-4xl font-extrabold leading-tight tracking-tight drop-shadow-md">Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2026/2027 Telah Dibuka</h2>
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=1500" alt="Slide 2" class="w-full h-full object-cover opacity-50 md:opacity-60">
+                    <div class="absolute inset-0 bg-black/40 md:bg-transparent md:bg-gradient-to-t md:from-black/90 md:via-black/30 md:to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 md:p-10 text-white z-10">
+                        <span class="bg-emerald-600 text-white text-[9px] md:text-[10px] px-2.5 py-0.5 md:py-1 rounded font-bold uppercase tracking-wider inline-block mb-1.5 md:mb-3">Pendaftaran</span>
+                        <h2 class="text-sm md:text-4xl font-extrabold leading-tight tracking-tight drop-shadow-lg">Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2026/2027 Telah Dibuka</h2>
                     </div>
                 </div>
 
+                <!-- SLIDE 3 -->
                 <div class="slide h-full w-full relative">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1500" alt="Slide 3" class="w-full h-full object-cover opacity-60">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
-                        <span class="bg-amber-600 text-white text-[10px] px-3 py-1 rounded font-bold uppercase tracking-wider inline-block mb-3">Fasilitas</span>
-                        <h2 class="text-xl md:text-4xl font-extrabold leading-tight tracking-tight drop-shadow-md">Ruang Kelas Berbasis Teknologi Nyaman Untuk Kenyamanan Belajar Siswa</h2>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1500" alt="Slide 3" class="w-full h-full object-cover opacity-50 md:opacity-60">
+                    <div class="absolute inset-0 bg-black/40 md:bg-transparent md:bg-gradient-to-t md:from-black/90 md:via-black/30 md:to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 md:p-10 text-white z-10">
+                        <span class="bg-amber-600 text-white text-[9px] md:text-[10px] px-2.5 py-0.5 md:py-1 rounded font-bold uppercase tracking-wider inline-block mb-1.5 md:mb-3">Fasilitas</span>
+                        <h2 class="text-sm md:text-4xl font-extrabold leading-tight tracking-tight drop-shadow-lg">Ruang Kelas Berbasis Teknologi Nyaman Untuk Kenyamanan Belajar Siswa</h2>
                     </div>
                 </div>
 
@@ -89,104 +99,102 @@
         </div>
     </header>
 
-    <section class="max-w-7xl mx-auto px-6 py-4">
-        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-            <div><span class="text-xs font-bold text-slate-400 uppercase tracking-widest block">Status Kelayakan</span><span class="text-xl font-extrabold text-indigo-950 mt-1 block">AKREDITASI A</span></div>
-            <div><span class="text-xs font-bold text-slate-400 uppercase tracking-widest block">Siswa Aktif</span><span class="text-xl font-extrabold text-indigo-950 mt-1 block">180 Anak</span></div>
-            <div><span class="text-xs font-bold text-slate-400 uppercase tracking-widest block">Guru & Staf</span><span class="text-xl font-extrabold text-indigo-950 mt-1 block">14 Personel</span></div>
-            <div><span class="text-xs font-bold text-slate-400 uppercase tracking-widest block">Kelompok Belajar</span><span class="text-xl font-extrabold text-indigo-950 mt-1 block">6 Rombel</span></div>
+    <!-- SECTION INFO DATA METRIK -->
+    <section class="max-w-7xl mx-auto px-4 md:px-6 py-2">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
+            <div class="border-r border-slate-100 last:border-0"><span class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest block">Status</span><span class="text-sm md:text-xl font-extrabold text-indigo-950 mt-1 block">AKREDITASI A</span></div>
+            <div class="md:border-r md:border-slate-100"><span class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest block">Siswa</span><span class="text-sm md:text-xl font-extrabold text-indigo-950 mt-1 block">180 Anak</span></div>
+            <div class="border-r border-slate-100"><span class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest block">Guru & Staf</span><span class="text-sm md:text-xl font-extrabold text-indigo-950 mt-1 block">14 Orang</span></div>
+            <div><span class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest block">Rombel</span><span class="text-sm md:text-xl font-extrabold text-indigo-950 mt-1 block">6 Kelas</span></div>
         </div>
     </section>
 
-    <main id="informasi" class="max-w-7xl mx-auto px-6 py-8">
+    <!-- KONTEN BERITA AKTUAL -->
+    <main id="informasi" class="max-w-7xl mx-auto px-4 md:px-6 py-8">
         <div class="flex items-center justify-between mb-6 border-b border-slate-200 pb-3">
             <div class="flex items-center space-x-3">
                 <div class="w-1.5 h-6 bg-indigo-900 rounded-full"></div>
-                <h2 class="text-xl font-extrabold text-indigo-950 tracking-tight">Kabar Terkini Sekolah</h2>
+                <h2 class="text-lg md:text-xl font-extrabold text-indigo-950 tracking-tight">Kabar Terkini Sekolah</h2>
             </div>
-            <a href="#" class="text-xs font-bold text-indigo-700 hover:text-indigo-900 transition tracking-wide">Lihat Semua Berita &rarr;</a>
+            <a href="#" class="text-xs font-bold text-indigo-700 hover:text-indigo-900 transition tracking-wide">Semua &rarr;</a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <!-- Artikel 1 -->
             <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-200 group">
-                <div class="h-48 overflow-hidden bg-slate-100">
+                <div class="h-44 md:h-48 overflow-hidden bg-slate-100">
                     <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=600" alt="PPDB" class="w-full h-full object-cover group-hover:scale-102 transition duration-300">
                 </div>
                 <div class="p-5">
                     <span class="text-[10px] bg-slate-100 text-indigo-900 px-2 py-0.5 rounded font-bold uppercase tracking-wide">Pengumuman</span>
-                    <h3 class="font-bold text-base text-slate-900 mt-2.5 line-clamp-2 hover:text-indigo-900 transition cursor-pointer leading-snug">
+                    <h3 class="font-bold text-sm md:text-base text-slate-900 mt-2 line-clamp-2 hover:text-indigo-900 transition cursor-pointer leading-snug">
                         Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran Baru Resmi Dibuka
                     </h3>
-                    <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar"></i> 19 Juni 2026</p>
+                    <p class="text-[11px] text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar"></i> 19 Juni 2026</p>
                 </div>
             </article>
 
+            <!-- Artikel 2 -->
             <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-200 group">
-                <div class="h-48 overflow-hidden bg-slate-100">
+                <div class="h-44 md:h-48 overflow-hidden bg-slate-100">
                     <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600" alt="Prestasi" class="w-full h-full object-cover group-hover:scale-102 transition duration-300">
                 </div>
                 <div class="p-5">
                     <span class="text-[10px] bg-slate-100 text-indigo-900 px-2 py-0.5 rounded font-bold uppercase tracking-wide">Prestasi</span>
-                    <h3 class="font-bold text-base text-slate-900 mt-2.5 line-clamp-2 hover:text-indigo-900 transition cursor-pointer leading-snug">
+                    <h3 class="font-bold text-sm md:text-base text-slate-900 mt-2 line-clamp-2 hover:text-indigo-900 transition cursor-pointer leading-snug">
                         Siswa SDN Butoh 1 Raih Medali Emas Lomba Matematika Tingkat Kecamatan
                     </h3>
-                    <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar"></i> 15 Juni 2026</p>
+                    <p class="text-[11px] text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar"></i> 15 Juni 2026</p>
                 </div>
             </article>
 
+            <!-- Artikel 3 -->
             <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-200 group">
-                <div class="h-48 overflow-hidden bg-slate-100">
+                <div class="h-44 md:h-48 overflow-hidden bg-slate-100">
                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600" alt="Digitalisasi" class="w-full h-full object-cover group-hover:scale-102 transition duration-300">
                 </div>
                 <div class="p-5">
                     <span class="text-[10px] bg-slate-100 text-indigo-900 px-2 py-0.5 rounded font-bold uppercase tracking-wide">Kegiatan</span>
-                    <h3 class="font-bold text-base text-slate-900 mt-2.5 line-clamp-2 hover:text-indigo-900 transition cursor-pointer leading-snug">
+                    <h3 class="font-bold text-sm md:text-base text-slate-900 mt-2 line-clamp-2 hover:text-indigo-900 transition cursor-pointer leading-snug">
                         Pemanfaatan Ekosistem Kelas Digital untuk Efisiensi Ujian Mandiri Siswa
                     </h3>
-                    <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar"></i> 10 Juni 2026</p>
+                    <p class="text-[11px] text-slate-400 mt-3 flex items-center gap-1.5"><i class="far fa-calendar"></i> 10 Juni 2026</p>
                 </div>
             </article>
         </div>
     </main>
 
-    <footer class="bg-indigo-950 text-slate-400 text-xs py-12 mt-16 border-t-4 border-yellow-500">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- FOOTER RESMI -->
+    <footer class="bg-indigo-950 text-slate-400 text-xs py-10 border-t-4 border-yellow-500">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-                <h4 class="text-white font-extrabold text-sm mb-3 uppercase tracking-wider">SDN Butoh 1 Ngasem</h4>
-                <p class="leading-relaxed opacity-75">
-                    Satuan pendidikan tingkat dasar resmi di bawah binaan Dinas Pendidikan Kabupaten Bojonegoro, Jawa Timur.
-                </p>
+                <h4 class="text-white font-extrabold text-sm mb-2 uppercase tracking-wider">SDN Butoh 1 Ngasem</h4>
+                <p class="leading-relaxed opacity-75">Satuan pendidikan tingkat dasar resmi di bawah binaan Dinas Pendidikan Kabupaten Bojonegoro, Jawa Timur.</p>
             </div>
             <div>
-                <h4 class="text-white font-extrabold text-sm mb-3 uppercase tracking-wider">Kontak & Lokasi</h4>
-                <p class="leading-relaxed opacity-75">
-                    Desa Butoh, Kecamatan Ngasem,<br>
-                    Kabupaten Bojonegoro, Jawa Timur, Indonesia.<br>
-                    <span class="block mt-2"><i class="far fa-envelope mr-1"></i> info@sdnbutoh1ngasem.sch.id</span>
-                </p>
+                <h4 class="text-white font-extrabold text-sm mb-2 uppercase tracking-wider">Kontak & Lokasi</h4>
+                <p class="leading-relaxed opacity-75">Desa Butoh, Kecamatan Ngasem, Kabupaten Bojonegoro.<br><span class="block mt-1.5"><i class="far fa-envelope mr-1"></i> info@sdnbutoh1ngasem.sch.id</span></p>
             </div>
             <div class="md:text-right">
-                <h4 class="text-white font-extrabold text-sm mb-3 uppercase tracking-wider">Pranala Luar</h4>
-                <ul class="space-y-2 text-cyan-400 font-medium">
+                <h4 class="text-white font-extrabold text-sm mb-2 uppercase tracking-wider">Pranala Luar</h4>
+                <ul class="space-y-1 text-cyan-400 font-medium">
                     <li><a href="https://sdnbutoh1ngasem.my.id" target="_blank" class="hover:underline">Portal Ruang Belajar Mandiri &rarr;</a></li>
-                    <li><a href="https://kemdikbud.go.id" target="_blank" class="hover:underline text-slate-300">Kementerian Dikdasmen &rarr;</a></li>
                 </ul>
-                <p class="text-[11px] text-slate-500 mt-8">&copy; 2026 SDN Butoh 1 Ngasem. Seluruh Hak Cipta Dilindungi.</p>
+                <p class="text-[10px] text-slate-500 mt-6">&copy; 2026 SDN Butoh 1 Ngasem. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- SCRIPT CAROUSEL -->
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
-        
         function nextSlide() {
             slides[currentSlide].classList.remove('active');
             currentSlide = (currentSlide + 1) % slides.length;
             slides[currentSlide].classList.add('active');
         }
-        
-        setInterval(nextSlide, 5000); // Berganti otomatis setiap 5 detik
+        setInterval(nextSlide, 5000);
     </script>
 
 </body>
