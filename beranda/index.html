@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDN Butoh 1 Ngasem - Website Resmi Sekolah</title>
-    <!-- Menggunakan Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
-    <!-- FONT PREMIUM KEDINASAN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,9 +22,12 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased pb-16 md:pb-0">
 
-    <!-- TOP BAR -->
+    <a href="https://sdnbutoh1ngasem.my.id" target="_blank" class="lg:hidden fixed bottom-5 right-5 z-50 bg-gradient-to-r from-indigo-900 to-indigo-950 text-white font-bold px-4 py-3 rounded-full shadow-2xl flex items-center gap-2 border border-cyan-400/30 text-xs tracking-wider animate-bounce">
+        <i class="fas fa-graduation-cap text-cyan-400 text-sm"></i> Ruang Belajar
+    </a>
+
     <div class="bg-indigo-950 text-white text-[11px] py-2 px-6 border-b border-white/10 hidden md:block font-medium tracking-wide">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div><span class="opacity-75">Situs Resmi Pendidikan Dasar — Kabupaten Bojonegoro</span></div>
@@ -37,7 +38,6 @@
         </div>
     </div>
 
-    <!-- MAIN NAVIGATION BAR -->
     <nav class="bg-white text-slate-900 shadow-sm sticky top-0 z-50 border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center space-x-3 md:space-x-4 w-full md:w-auto">
@@ -51,6 +51,7 @@
                 <a href="#" class="text-indigo-900 border-b-2 border-indigo-900 pb-1 transition">Beranda</a>
                 <a href="#profil" class="hover:text-indigo-950 transition">Profil</a>
                 <a href="#informasi" class="hover:text-indigo-950 transition">Informasi</a>
+                
                 <a href="https://sdnbutoh1ngasem.my.id" target="_blank" class="hidden lg:flex bg-indigo-900 text-white px-5 py-2 rounded-lg font-bold hover:bg-indigo-950 transition shadow-sm items-center gap-2 text-xs uppercase tracking-wider">
                     <i class="fas fa-graduation-cap"></i> Portal Belajar
                 </a>
@@ -58,16 +59,12 @@
         </div>
     </nav>
 
-    <!-- CAROUSEL/SLIDER HERO UTAMA AUTOMATIS (RESPONSIF HP) -->
     <header class="bg-white">
         <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-6">
-            <!-- Di HP rasionya disesuaikan jadi aspect-video agar gambar tetap tinggi dan teks muat -->
             <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-video md:aspect-[21/9] bg-indigo-950">
                 
-                <!-- SLIDE 1 -->
                 <div class="slide active h-full w-full relative">
                     <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1500" alt="Slide 1" class="w-full h-full object-cover opacity-50 md:opacity-60">
-                    <!-- Efek Gelap yang lebih kuat di HP (bg-black/40) agar tulisan putih terbaca jelas -->
                     <div class="absolute inset-0 bg-black/40 md:bg-transparent md:bg-gradient-to-t md:from-black/90 md:via-black/30 md:to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-4 md:p-10 text-white z-10">
                         <span class="bg-indigo-600 text-white text-[9px] md:text-[10px] px-2.5 py-0.5 md:py-1 rounded font-bold uppercase tracking-wider inline-block mb-1.5 md:mb-3">Fokus Utama</span>
@@ -75,7 +72,6 @@
                     </div>
                 </div>
 
-                <!-- SLIDE 2 -->
                 <div class="slide h-full w-full relative">
                     <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=1500" alt="Slide 2" class="w-full h-full object-cover opacity-50 md:opacity-60">
                     <div class="absolute inset-0 bg-black/40 md:bg-transparent md:bg-gradient-to-t md:from-black/90 md:via-black/30 md:to-transparent"></div>
@@ -85,7 +81,6 @@
                     </div>
                 </div>
 
-                <!-- SLIDE 3 -->
                 <div class="slide h-full w-full relative">
                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1500" alt="Slide 3" class="w-full h-full object-cover opacity-50 md:opacity-60">
                     <div class="absolute inset-0 bg-black/40 md:bg-transparent md:bg-gradient-to-t md:from-black/90 md:via-black/30 md:to-transparent"></div>
@@ -99,7 +94,6 @@
         </div>
     </header>
 
-    <!-- SECTION INFO DATA METRIK -->
     <section class="max-w-7xl mx-auto px-4 md:px-6 py-2">
         <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
             <div class="border-r border-slate-100 last:border-0"><span class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest block">Status</span><span class="text-sm md:text-xl font-extrabold text-indigo-950 mt-1 block">AKREDITASI A</span></div>
@@ -109,7 +103,6 @@
         </div>
     </section>
 
-    <!-- KONTEN BERITA AKTUAL -->
     <main id="informasi" class="max-w-7xl mx-auto px-4 md:px-6 py-8">
         <div class="flex items-center justify-between mb-6 border-b border-slate-200 pb-3">
             <div class="flex items-center space-x-3">
@@ -120,7 +113,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <!-- Artikel 1 -->
             <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-200 group">
                 <div class="h-44 md:h-48 overflow-hidden bg-slate-100">
                     <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=600" alt="PPDB" class="w-full h-full object-cover group-hover:scale-102 transition duration-300">
@@ -134,7 +126,6 @@
                 </div>
             </article>
 
-            <!-- Artikel 2 -->
             <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-200 group">
                 <div class="h-44 md:h-48 overflow-hidden bg-slate-100">
                     <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600" alt="Prestasi" class="w-full h-full object-cover group-hover:scale-102 transition duration-300">
@@ -148,7 +139,6 @@
                 </div>
             </article>
 
-            <!-- Artikel 3 -->
             <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition duration-200 group">
                 <div class="h-44 md:h-48 overflow-hidden bg-slate-100">
                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600" alt="Digitalisasi" class="w-full h-full object-cover group-hover:scale-102 transition duration-300">
@@ -164,7 +154,6 @@
         </div>
     </main>
 
-    <!-- FOOTER RESMI -->
     <footer class="bg-indigo-950 text-slate-400 text-xs py-10 border-t-4 border-yellow-500">
         <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
@@ -185,7 +174,6 @@
         </div>
     </footer>
 
-    <!-- SCRIPT CAROUSEL -->
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
