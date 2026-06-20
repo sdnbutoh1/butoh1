@@ -26,33 +26,7 @@
   
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased pb-16 md:pb-0">
-   <script>
-    function toggleDropdown(event, id) {
-        event.stopPropagation(); // Mencegah klik menembus ke luar
-        
-        // Ambil semua dropdown yang ada
-        const dropdowns = ['dropdown-informasi', 'dropdown-lainnya'];
-        
-        dropdowns.forEach(dropdownId => {
-            const el = document.getElementById(dropdownId);
-            if (dropdownId === id) {
-                // Toggle (buka/tutup) dropdown yang sedang diklik
-                el.classList.toggle('hidden');
-            } else {
-                // Tutup dropdown lainnya yang sedang terbuka
-                el.classList.add('hidden');
-            }
-        });
-    }
-
-    // Fungsi untuk menutup menu otomatis jika pengunjung klik di luar menu
-    window.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown-wrapper')) {
-            document.getElementById('dropdown-informasi').classList.add('hidden');
-            document.getElementById('dropdown-lainnya').classList.add('hidden');
-        }
-    });
-</script>
+   
     <!-- FLOATING BUTTON -->
     <a href="https://sdnbutoh1ngasem.my.id" target="_blank" class="lg:hidden fixed bottom-5 right-5 z-50 bg-gradient-to-r from-indigo-900 to-indigo-950 text-white font-bold px-4 py-3 rounded-full shadow-2xl flex items-center gap-2 border border-cyan-400/30 text-xs tracking-wider animate-bounce">
         <i class="fas fa-graduation-cap text-cyan-400 text-sm"></i> Ruang Belajar
@@ -247,6 +221,32 @@
         }
         setInterval(nextSlide, 5000);
     </script>
+<script>
+    function toggleDropdown(event, id) {
+        event.stopPropagation(); // Mencegah klik menembus ke luar
+        
+        // Ambil semua dropdown yang ada
+        const dropdowns = ['dropdown-informasi', 'dropdown-lainnya'];
+        
+        dropdowns.forEach(dropdownId => {
+            const el = document.getElementById(dropdownId);
+            if (dropdownId === id) {
+                // Toggle (buka/tutup) dropdown yang sedang diklik
+                el.classList.toggle('hidden');
+            } else {
+                // Tutup dropdown lainnya yang sedang terbuka
+                el.classList.add('hidden');
+            }
+        });
+    }
 
+    // Fungsi untuk menutup menu otomatis jika pengunjung klik di luar menu
+    window.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown-wrapper')) {
+            document.getElementById('dropdown-informasi').classList.add('hidden');
+            document.getElementById('dropdown-lainnya').classList.add('hidden');
+        }
+    });
+</script>
 </body>
 </html>
